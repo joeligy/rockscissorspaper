@@ -1,0 +1,22 @@
+<template name="player1">
+  <body>
+    <div>
+      <header>
+        <h1>Player1</h1>
+        <form class="play1">
+          <input type="text" name="text" placeholder="Type to play" />
+        </form>
+    </header>
+      <ul>
+        {{#each status1}}
+          {{> stat1 }}
+        {{/each}}
+      </ul>
+      <input class="start1" type="button" value="New game"/>
+  </div>
+  </body>
+</template>
+
+<template name="stat1">
+  <li>{{text}}</li>
+</template>
